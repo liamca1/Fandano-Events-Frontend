@@ -1,0 +1,174 @@
+.main {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+
+  background-color: rgb(45, 212, 191);
+  background-image: radial-gradient(
+      at 67% 68%,
+      rgb(255, 255, 255) 0,
+      transparent 37%
+    ),
+    radial-gradient(at 94% 85%, rgb(29, 78, 216) 0, transparent 84%),
+    radial-gradient(at 40% 59%, rgb(133, 77, 14) 0, transparent 21%),
+    radial-gradient(at 11% 11%, rgb(190, 242, 100) 0, transparent 18%),
+    radial-gradient(at 17% 40%, rgb(254, 243, 199) 0, transparent 92%),
+    radial-gradient(at 63% 39%, rgb(109, 40, 217) 0, transparent 62%);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  color: var(--color-white);
+  font-family: var(--font-inter);
+  align-self: stretch;
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-md);
+  gap: 11px;
+}
+
+.header {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: right;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+  border-bottom: solid 1px white;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.headerLogo {
+  position: relative;
+  width: 264px;
+  height: 98px;
+  flex-shrink: 0;
+  object-fit: cover;
+  opacity: 0;
+}
+
+.headerLogo.animate {
+  animation: 3s ease 0s 1 normal forwards fade-in;
+}
+
+.headerInfo {
+  font-size: var(--font-size-base);
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  flex-shrink: 0;
+}
+.dateLocation,
+.content {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.dateLocation {
+  justify-content: flex-start;
+  gap: 22px;
+}
+
+.postTitle {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-xl);
+}
+
+.postDate {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-base);
+  font-style: italic;
+  text-align: right;
+}
+
+.postDetails {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.postArtistDetails {
+  font-size: var(--font-size-xl);
+  position: relative;
+  text-transform: uppercase;
+  display: inline-block;
+  flex-shrink: 0;
+  width: 90vw;
+}
+
+.postArtistDetails:hover {
+  cursor: ne;
+}
+
+.postArtistSoundCloud {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 9px;
+  text-align: right;
+  font-size: var(--font-size-sm);
+  display: flex;
+  align-items: flex-start;
+}
+.postArtistSoundCloudDiv {
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.postArtistSoundCloudDivInside {
+  position: relative;
+}
+
+.postArtistDetailsTitle {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.poster {
+  position: relative;
+  height: 70vh;
+  aspect-ratio: 3 / 4;
+  flex-shrink: 0;
+  overflow: hidden;
+  object-fit: cover;
+  @media (max-width: 400px) {
+    .posterIcon {
+      width: 75vw;
+    }
+  }
+}
+
+.footer {
+}
+
+.guidelinesTitle {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: var(--font-size-xl);
+}
+
+.guidelinesDescription {
+  padding-bottom: 20px;
+  margin-right: 20px;
+  margin-bottom: 70px;
+  border-bottom: solid 1px black;
+}
