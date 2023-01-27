@@ -13,7 +13,7 @@ function HomePage({ posts }) {
 
 export default HomePage;
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const postsResponse = await fetcher(
     `${process.env.NEXT_PUBLIC_STRAPI_URL}/posts`
   );
