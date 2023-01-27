@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import styles from "./index.module.css";
 import { Fragment } from "react";
 import { fetcher } from "../lib/api";
 
@@ -15,11 +13,10 @@ function HomePage({ posts }) {
 
 export default HomePage;
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const postsResponse = await fetcher(
     `${process.env.NEXT_PUBLIC_STRAPI_URL}/posts`
   );
-  console.log(postsResponse);
   return {
     props: {
       posts: postsResponse.data,
