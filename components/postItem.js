@@ -102,11 +102,6 @@ function PostItem({ posts }) {
                       </a>
                     </h1>
                     <h1 className="postArtistDetailsTitle">
-                      <a href={post.attributes.artist_7_link}>
-                        {post.attributes.artist_7}
-                      </a>
-                    </h1>
-                    <h1 className="postArtistDetailsTitle">
                       <a href={post.attributes.artist_8_link}>
                         {post.attributes.artist_8}
                       </a>
