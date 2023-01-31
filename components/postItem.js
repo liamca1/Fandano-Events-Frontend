@@ -40,13 +40,18 @@ function PostItem({ posts }) {
   return (
     <div className={styles.main}>
       <header className={styles.header}>
-        <img
-          className={styles.headerLogo}
-          alt=""
-          src="../fandango-logo-white-1@2x.png"
-          data-animate-on-scroll
-        />
-        <div className={styles.headerInfo}>Upcoming Party Information</div>
+        <div className="headerDivRight">
+          <img
+            className={styles.headerLogo}
+            alt=""
+            src="../fandango-logo-white-1@2x.png"
+            data-animate-on-scroll
+          />
+        </div>
+        <div className="headerDivLeft">
+          {" "}
+          <div className={styles.headerInfo}>Upcoming Party Information</div>
+        </div>
       </header>
       {/* list of posts */}
       <ul>

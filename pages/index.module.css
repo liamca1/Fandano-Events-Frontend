@@ -36,6 +36,7 @@
   align-items: flex-start;
   justify-content: space-between;
   text-align: right;
+  height: 100px;
   font-size: var(--font-size-sm);
   color: var(--color-white);
   font-family: var(--font-inter);
@@ -52,7 +53,7 @@
 }
 
 .headerLogo {
-  position: relative;
+  position: absolute;
   width: 264px;
   height: 98px;
   flex-shrink: 0;
@@ -64,10 +65,18 @@
   animation: 3s ease 0s 1 normal forwards fade-in;
 }
 
+.headerDivLeft {
+  width: 50vw;
+}
+
+.headerDivRight {
+  width: 50vw;
+}
 .headerInfo {
   font-size: var(--font-size-base);
   position: relative;
-  display: inline-block;
+  margin-left: 150px;
+  /* display: inline-block; */
   width: 130px;
   flex-shrink: 0;
 }
