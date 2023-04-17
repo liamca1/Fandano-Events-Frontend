@@ -185,52 +185,52 @@
 }
 
 .postArtistDetailsTitle1 {
-  color: yellow;
+  color: yellow !important;
   margin-block-start: 0;
   margin-block-end: 0;
 }
 .postArtistDetailsTitle2 {
-  color: orange;
+  color: orange !important;
   margin-block-start: 0;
   margin-block-end: 0;
 }
 .postArtistDetailsTitle3 {
-  color: blueviolet;
+  color: blueviolet !important;
   margin-block-start: 0;
   margin-block-end: 0;
 }
 .postArtistDetailsTitle4 {
-  color: seagreen;
+  color: seagreen !important;
   margin-block-start: 0;
   margin-block-end: 0;
 }
 .postArtistDetailsTitle5 {
-  color: rgb(136, 232, 144);
+  color: rgb(136, 232, 144) !important;
   margin-block-start: 0;
   margin-block-end: 0;
 }
 .postArtistDetailsTitle6 {
-  color: rgb(0, 251, 255);
+  color: rgb(0, 251, 255) !important;
   margin-block-start: 0;
   margin-block-end: 0;
 }
 .postArtistDetailsTitle7 {
-  color: rgb(249, 131, 210);
+  color: rgb(249, 131, 210) !important;
   margin-block-start: 0;
   margin-block-end: 0;
 }
 .postArtistDetailsTitle8 {
-  color: rgb(255, 0, 0);
+  color: rgb(255, 0, 0) !important;
   margin-block-start: 0;
   margin-block-end: 0;
 }
 .postArtistDetailsTitle9 {
-  color: yellow;
+  color: yellow !important;
   margin-block-start: 0;
   margin-block-end: 0;
 }
 .postArtistDetailsTitle10 {
-  color: rgb(51, 0, 255);
+  color: rgb(51, 0, 255) !important;
   margin-block-start: 0;
   margin-block-end: 0;
 }
