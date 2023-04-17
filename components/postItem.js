@@ -40,7 +40,7 @@ function PostItem({ posts }) {
   return (
     <div className={styles.main}>
       <header className={styles.header}>
-        <div className="headerDivRight">
+        <div className={styles.headerDivRight}>
           <img
             className={styles.headerLogo}
             alt=""
@@ -48,13 +48,12 @@ function PostItem({ posts }) {
             data-animate-on-scroll
           />
         </div>
-        <div className="headerDivLeft">
-          {" "}
+     
           <div className={styles.headerInfo}>Upcoming Party Information</div>
-        </div>
+       
       </header>
       {/* list of posts */}
-      <ul>
+      <ul className="ul">
         {[...posts].reverse().map((post) => {
           return (
             <div className={styles.content} key={post.id}>
@@ -66,52 +65,52 @@ function PostItem({ posts }) {
 
                 <div className={styles.postDetails}>
                   <div className={styles.postArtistDetails}>
-                    <h1 className="postArtistDetailsTitle">
+                    <h1 className={styles.postArtistDetailsTitle1}>
                       <a href={post.attributes.artist_1_link}>
                         {post.attributes.artist_1}
                       </a>
                     </h1>
-                    <h1 className="postArtistDetailsTitle">
+                    <h1 className={styles.postArtistDetailsTitle2}>
                       <a href={post.attributes.artist_2_link}>
                         {post.attributes.artist_2}
                       </a>
                     </h1>
-                    <h1 className="postArtistDetailsTitle">
+                    <h1 className={styles.postArtistDetailsTitle3}>
                       <a href={post.attributes.artist_3_link}>
                         {post.attributes.artist_3}
                       </a>
                     </h1>
-                    <h1 className="postArtistDetailsTitle">
+                    <h1 className={styles.postArtistDetailsTitle4}>
                       <a href={post.attributes.artist_4_link}>
                         {post.attributes.artist_4}
                       </a>
                     </h1>
-                    <h1 className="postArtistDetailsTitle">
+                    <h1 className={styles.postArtistDetailsTitle5}>
                       <a href={post.attributes.artist_5_link}>
                         {post.attributes.artist_5}
                       </a>
                     </h1>
-                    <h1 className="postArtistDetailsTitle">
+                    <h1 className={styles.postArtistDetailsTitle6}>
                       <a href={post.attributes.artist_6_link}>
                         {post.attributes.artist_6}
                       </a>
                     </h1>
-                    <h1 className="postArtistDetailsTitle">
+                    <h1 className={styles.postArtistDetailsTitle7}>
                       <a href={post.attributes.artist_7_link}>
                         {post.attributes.artist_7}
                       </a>
                     </h1>
-                    <h1 className="postArtistDetailsTitle">
+                    <h1 className={styles.postArtistDetailsTitle8}>
                       <a href={post.attributes.artist_8_link}>
                         {post.attributes.artist_8}
                       </a>
                     </h1>
-                    <h1 className="postArtistDetailsTitle">
+                    <h1 className={styles.postArtistDetailsTitle9}>
                       <a href={post.attributes.artist_9_link}>
                         {post.attributes.artist_9}
                       </a>
                     </h1>
-                    <h1 className="postArtistDetailsTitle">
+                    <h1 className={styles.postArtistDetailsTitle10}>
                       <a href={post.attributes.artist_10_link}>
                         {post.attributes.artist_10}
                       </a>
