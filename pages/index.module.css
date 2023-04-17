@@ -20,7 +20,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  color: var(--color-white);
   font-family: var(--font-inter);
   align-self: stretch;
   flex: 1;
@@ -36,11 +35,17 @@
   align-items: flex-start;
   justify-content: space-between;
   text-align: right;
-  height: 100px;
+  height: 80px;
   font-size: var(--font-size-sm);
   color: var(--color-white);
   font-family: var(--font-inter);
   border-bottom: solid 1px white;
+}
+
+@media screen and (max-width: 240px) {
+  .header {
+    width: 100%;
+  }
 }
 
 @keyframes fade-in {
@@ -54,28 +59,38 @@
 
 .headerLogo {
   position: absolute;
-  width: 264px;
-  height: 98px;
+  width: 211.2px;
+  /* height: 98px; */
   flex-shrink: 0;
   object-fit: cover;
   opacity: 0;
+}
+
+@media screen and (max-width: 240px) {
+  /* .headerLogo {
+    width: 161.2px;
+  } */
+  .headerInfo {
+    /* visibility: hidden; */
+    font-size: xx-small;
+  }
 }
 
 .headerLogo.animate {
   animation: 3s ease 0s 1 normal forwards fade-in;
 }
 
-.headerDivLeft {
-  width: 50vw;
+/* .headerDivLeft {
+  width: 50%;
 }
 
 .headerDivRight {
-  width: 50vw;
-}
+  width: 50%;
+} */
 .headerInfo {
   font-size: var(--font-size-base);
   position: relative;
-  margin-left: 150px;
+  /* margin-left: 150px; */
   /* display: inline-block; */
   width: 130px;
   flex-shrink: 0;
@@ -87,6 +102,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  /* width: 95vw; */
 }
 
 .dateLocation {
@@ -94,18 +110,35 @@
   gap: 22px;
 }
 
+.postDivLeft {
+  width: 50%;
+}
+
+.postDivRight {
+  width: 50%;
+}
+
 .postTitle {
   align-self: stretch;
   position: relative;
   font-size: var(--font-size-xl);
+  width: 95%;
+  color: white;
+}
+.ul {
+  width: 95vw;
+  padding: 12px;
 }
 
 .postDate {
   align-self: stretch;
-  position: relative;
   font-size: var(--font-size-base);
   font-style: italic;
   text-align: right;
+  display: inline-block;
+  /* width: 200px; */
+  flex-shrink: 0;
+  color: white
 }
 
 .postDetails {
@@ -114,6 +147,7 @@
   align-self: stretch;
   flex-direction: row;
   justify-content: space-between;
+  /* width: 95vw; */
 }
 
 .postArtistDetails {
@@ -122,7 +156,7 @@
   text-transform: uppercase;
   display: inline-block;
   flex-shrink: 0;
-  width: 90vw;
+  width: 90%;
   /* hyphens: manual; */
   word-break: break-word;
   word-wrap: break-word;
@@ -150,14 +184,60 @@
   position: relative;
 }
 
-.postArtistDetailsTitle {
+.postArtistDetailsTitle1 {
+  color: yellow;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.postArtistDetailsTitle2 {
+  color: orange;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.postArtistDetailsTitle3 {
+  color: blueviolet;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.postArtistDetailsTitle4 {
+  color: seagreen;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.postArtistDetailsTitle5 {
+  color: rgb(136, 232, 144);
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.postArtistDetailsTitle6 {
+  color: rgb(0, 251, 255);
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.postArtistDetailsTitle7 {
+  color: rgb(249, 131, 210);
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.postArtistDetailsTitle8 {
+  color: rgb(255, 0, 0);
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.postArtistDetailsTitle9 {
+  color: yellow;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.postArtistDetailsTitle10 {
+  color: rgb(51, 0, 255);
   margin-block-start: 0;
   margin-block-end: 0;
 }
 
 .poster {
   position: relative;
-  height: 70vh;
+  height: 50vh;
   aspect-ratio: 3 / 4;
   flex-shrink: 0;
   overflow: hidden;
@@ -176,11 +256,13 @@
   padding-top: 20px;
   padding-bottom: 30px;
   font-size: var(--font-size-xl);
+  color: white;
 }
 
 .guidelinesDescription {
   padding-bottom: 20px;
-  margin-right: 20px;
+  margin-right: 10px;
   margin-bottom: 70px;
   border-bottom: solid 1px black;
+  color: white;
 }
