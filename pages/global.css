@@ -42,12 +42,12 @@ body {
   /* Prevent the browser from synthesizing missing typefaces */
   font-synthesis: none;
 
-  color: black;
+  /* color: black; */
   /* UI controls color (example: range input) */
   accent-color: black;
 
   /* Because overscroll-behavior: none only works on WebKit, a background color is set that will show when overscroll occurs  */
-  background: white;
+  /* background: white; */
 }
 
 /* Remove unintuitive behaviour such as gaps around media elements.  */
@@ -74,8 +74,9 @@ strong {
 
 a {
   text-decoration: none;
-  color: yellow;
 }
+
+
 
 a:hover {
   color: pink;
@@ -112,10 +113,10 @@ body {
   --font-inter: Inter;
 
   /* font sizes */
-  --font-size-sm: 12px;
-  --font-size-base: 16px;
-  --font-size-lg: 30px;
-  --font-size-xl: 38px;
+  --font-size-sm: 9.6px;
+  --font-size-base: 12.8px;
+  --font-size-lg: 24px;
+  --font-size-xl: 30.4px;
 
   /* Colors */
   --color-white: #fff;
@@ -124,6 +125,25 @@ body {
   --padding-sm: 10px;
   --padding-md: 12px;
 }
+
+@media screen and (max-width: 768px) {
+  :root {
+    --font-size-xl: 26px;
+  }
+}
+
+@media screen and (max-width: 316px) {
+  :root {
+    --font-size-xl: 20px;
+  }
+}
+
+@media screen and (max-width: 240px) {
+  :root {
+    --font-size-xl: 12px;
+  }
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
